@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="wallp.vcxproj" />
+  <Project Path="wallp.vcxproj" Id="0db94f7f-6fea-4ce9-9e20-99999566dcf9" />
 </Solution>

@@ -107,7 +107,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -123,7 +123,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
@@ -135,7 +135,12 @@
     <ClCompile Include="ext\imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="ext\imgui\imgui_tables.cpp" />
     <ClCompile Include="ext\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\app.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\renderer.cpp" />
+    <ClCompile Include="src\settings_manager.cpp" />
+    <ClCompile Include="src\texture_loader.cpp" />
+    <ClCompile Include="src\wallpaper_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ext\imgui\imconfig.h" />
@@ -146,6 +151,13 @@
     <ClInclude Include="ext\imgui\imstb_rectpack.h" />
     <ClInclude Include="ext\imgui\imstb_textedit.h" />
     <ClInclude Include="ext\imgui\imstb_truetype.h" />
+    <ClInclude Include="ext\stb_image.h" />
+    <ClInclude Include="src\app.h" />
+    <ClInclude Include="src\renderer.h" />
+    <ClInclude Include="src\settings.h" />
+    <ClInclude Include="src\settings_manager.h" />
+    <ClInclude Include="src\texture_loader.h" />
+    <ClInclude Include="src\wallpaper_manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
